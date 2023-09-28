@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PetShop Animagus</title>
+  <meta name="title" content="Animagus">
+
+
+  <link rel="shortcut icon" href="./src/images/favicon-32x32.png" type="image/svg+xml">
+
+  <link rel="stylesheet" href="./src/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+
+
+  <link rel="preload" as="image" href="./src/images/hero-banner.jpg">
+
+</head>
+
+<body id="top">
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <button class="nav-toggle-btn" aria-label="toggle manu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" aria-label="true" class="close-icon"></ion-icon>
+      </button>
+
+      <a href="#" class="logo">Animagus</a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>Início</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#shop" class="navbar-link" data-nav-link>Produtos</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-link>Blogs</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-link>Contatos</a>
+          </li>
+
+        </ul>
+
+        <a href="#" class="navbar-action-btn">Login</a>
+      </nav>
+
+      <div class="header-actions">
+
+        <button class="action-btn" aria-label="Search">
+          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <button class="action-btn user" aria-label="User">
+          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <button class="action-btn" aria-label="cart">
+          <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+          <span class="btn-badge">0</span>
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+
+  <main>
+    <article>
+
+      <section class="section hero has-bg-image" id="home" aria-label="home"
+        style="background-image: url('./src/images/hero-banner.jpg')">
+        <div class="container">
+
+          <h1 class="h1 hero-title">
+            <span class="span">Alta Qualidade</span> Pet Food
+          </h1>
+
+          <p class="hero-text">Promoção 40% Off</p>
+
+          <a href="#" class="btn">Compre Já</a>
+
+        </div>
+      </section>
+
+      <section class="section category" aria-label="category">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            <span class="span">Pricipais</span> categorias
+          </h2>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./src/images/category-1.jpg" width="330" height="300" loading="lazy" alt="Cat Food"
+                    class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Comida p/ Gato</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./src/images/category-2.jpg" width="330" height="300" loading="lazy" alt="Cat Toys"
+                    class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Briquedo p/ Gato</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./src/images/category-3.jpg" width="330" height="300" loading="lazy" alt="Dog Food"
+                    class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Comida p/ Cachorro</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./src/images/category-4.jpg" width="330" height="300" loading="lazy" alt="Dog Toys"
+                    class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Brinquedo p/ Cachorro</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="./src/images/category-5.jpg" width="330" height="300" loading="lazy" alt="Dog Sumpplements"
+                    class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Serviços</a>
+                </h3>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <section class="section offer" aria-label="offer">
+        <div class="container">
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="offer-card has-bg-image img-holder"
+                style="background-image: url('./src/images/offer-banner-1.jpg'); --width: 540; --height: 374;">
+
+                <p class="card-subtitle">Serviços Animagus.</p>
+
+                <h3 class="h3 card-title">
+                  Banho e Tosa <span class="span">Ofertas</span>
+                </h3>
+
+                <a href="#" class="btn">Mais Informações</a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="offer-card has-bg-image img-holder"
+                style="background-image: url('./src/images/offer-banner-2.jpg'); --width: 540; --height: 374;">
+
+                <p class="card-subtitle">Clínica Veterinária</p>
+
+                <h3 class="h3 card-title">
+                  24 Horas<span class="span">Traga seu PET</span>
+                </h3>
+
+                <a href="#" class="btn">Mais Informações</a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="offer-card has-bg-image img-holder"
+                style="background-image: url('./src/images/offer-banner-3.jpg'); --width: 540; --height: 374;">
+
+                <p class="card-subtitle">Animais Silvestres</p>
+
+                <h3 class="h3 card-title">
+                  Guia de <span class="span">Cuidados</span>
+                </h3>
+
+                <a href="#" class="btn">Mais Informações</a>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+      <section class="section product" id="shop" aria-label="product">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            <span class="span">Mais</span> Vendidos
+          </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="./src/images/product-1.jpg" width="360" height="360" loading="lazy"
+                    alt="Commodo leo sed porta" class="img-cover default">
+                  <img src="./src/images/product-1_0.jpg" width="360" height="360" loading="lazy"
+                    alt="Commodo leo sed porta" class="img-cover hover">
+
+                  <button class="card-action-btn" aria-label="add to card" title="Add To Card">
+                    <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="wrapper">
+                    <div class="rating-wrapper">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <span class="span">(1)</span>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Ração Premium (Porte Grande) 25Kg</a>
+                  </h3>
+
+                  <data class="card-price" value="15">R$195.00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="./src/images/item-1.png" width="360" height="360" loading="lazy" alt="Consulta"
+                    class="img-cover default">
+                  <img src="./src/images/item-1_0.jpg" width="360" height="360" loading="lazy" alt="Consulta"
+                    class="img-cover hover">
+
+                  <button class="card-action-btn" aria-label="add to card" title="Add To Card">
+                    <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="wrapper">
+                    <div class="rating-wrapper gray">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <span class="span">(0)</span>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Consulta Veterinária(Clínico Geral)</a>
+                  </h3>
+
+                  <data class="card-price" value="45">R$145.00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="./src/images/product-3.jpg" width="360" height="360" loading="lazy"
+                    alt="Morbi vel arcu scelerisque" class="img-cover default">
+                  <img src="./src/images/product-3_0.jpg" width="360" height="360" loading="lazy"
+                    alt="Morbi vel arcu scelerisque" class="img-cover hover">
+
+                  <button class="card-action-btn" aria-label="add to card" title="Add To Card">
+                    <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="wrapper">
+                    <div class="rating-wrapper gray">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <span class="span">(0)</span>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Ração p/ Peixe (Camarão) 250g</a>
+                  </h3>
+
+                  <data class="card-price" value="45">R$35.00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="./src/images/product-4.jpg" width="360" height="360" loading="lazy"
+                    alt="Morbi vel arcu scelerisque" class="img-cover default">
+                  <img src="./src/images/product-4_0.jpg" width="360" height="360" loading="lazy"
+                    alt="Morbi vel arcu scelerisque" class="img-cover hover">
+
+                  <button class="card-action-btn" aria-label="add to card" title="Add To Card">
+                    <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="wrapper">
+                    <div class="rating-wrapper gray">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <span class="span">(0)</span>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Ração Papagaio E Arara 3kg</a>
+                  </h3>
+
+                  <data class="card-price" value="49">R$130.00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <section class="section service" aria-label="service">
+        <div class="container">
+
+          <img src="./src/images/service-image.png" width="122" height="136" loading="lazy" alt="" class="img">
+
+          <h2 class="h2 section-title">
+            <span class="span">O que seu pet precisa,</span> Quando precisa.
+          </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./src/images/service-icon-1.png" width="70" height="70" loading="lazy" alt="service icon">
+                </figure>
+
+                <h3 class="h3 card-title">Envio no mesmo dia</h3>
+
+                <p class="card-text">
+                  Pedidos até às 14:00 envio imediato. Frete grátis para compras acima de R$90.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./src/images/service-icon-2.png" width="70" height="70" loading="lazy" alt="service icon">
+                </figure>
+
+                <h3 class="h3 card-title">Devoluções em até 30 dias</h3>
+
+                <p class="card-text">
+                  Desconto de 35% em seu primeiro pedido e 5% de desconto em todos os pedidos futuros.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./src/images/service-icon-3.png" width="70" height="70" loading="lazy" alt="service icon">
+                </figure>
+
+                <h3 class="h3 card-title">Pagamento Seguro</h3>
+
+                <p class="card-text">
+                  Confirmação dos pagamentos com os métodos mais seguros do mercado.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./src/images/service-icon-4.png" width="70" height="70" loading="lazy" alt="service icon">
+                </figure>
+
+                <h3 class="h3 card-title">Suporte 24/7</h3>
+
+                <p class="card-text">
+                  Qualquer dúvida entre com contato com nosos time de atendimento.
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <section class="cta has-bg-image" aria-label="cta" style="background-image: url('./src/images/cta-bg.jpg')">
+        <div class="container">
+
+          <figure class="cta-banner">
+            <img src="./src/images/cta-banner.png" width="900" height="660" loading="lazy" alt="cat" class="w-100">
+          </figure>
+
+          <div class="cta-content">
+
+            <img src="./src/images/cta-icon.png" width="120" height="35" loading="lazy" alt="taste guarantee"
+              class="img">
+
+            <h2 class="h2 section-title">Prove, apaixone-se ou nós trocamos... Garantido!</h2>
+
+            <p class="section-text">
+              Na Animagus, acreditamos que seu cão e gato vão adorar os petistos dos nossos parceiros, se não o
+              gostarem... nós o ajudaremos a encontrar um substituto. Essa é nossa garantia de sabor.
+            </p>
+
+            <a href="#" class="btn">Descubra Mais</a>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <section class="section brand" aria-label="brand">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            <span class="span">Nossos</span> Parceiros
+          </h2>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="brand-card img-holder" style="--width: 150; --height: 150;">
+                <img src="./src/images/brand-1.jpg" width="150" height="150" loading="lazy" alt="brand logo"
+                  class="img-cover">
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="brand-card img-holder" style="--width: 150; --height: 150;">
+                <img src="./src/images/brand-2.jpg" width="150" height="150" loading="lazy" alt="brand logo"
+                  class="img-cover">
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="brand-card img-holder" style="--width: 150; --height: 150;">
+                <img src="./src/images/brand-3.jpg" width="150" height="150" loading="lazy" alt="brand logo"
+                  class="img-cover">
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="brand-card img-holder" style="--width: 150; --height: 150;">
+                <img src="./src/images/brand-4.jpg" width="150" height="150" loading="lazy" alt="brand logo"
+                  class="img-cover">
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="brand-card img-holder" style="--width: 150; --height: 150;">
+                <img src="./src/images/brand-5.jpg" width="150" height="150" loading="lazy" alt="brand logo"
+                  class="img-cover">
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+  <footer class="footer" style="background-image: url('./src/images/footer-bg.jpg')">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">Animagus</a>
+
+          <p class="footer-text">
+            Se tiver alguma dúvida nos envie em <a href="mailto:suporte@gmail.com" class="link">support@gmail.com</a>
+          </p>
+
+          <ul class="contact-list">
+
+            <li class="contact-item">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+              <address class="address">
+                Rua Pierre de Beranger, 999 - Campo Grande - SP
+              </address>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+              <a href="tel:+5511999999999" class="contact-link">(+55) 11 99999-9999</a>
+            </li>
+
+          </ul>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-WhatsApp"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Corporativo</p>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Carreiras</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Sobre Nós</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Fale Conosco</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Perguntas Frequentes</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Fornecedores</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Programa de Afiliados</a>
+          </li>
+        </ul>
+
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Informações</p>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Loja Online</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Política de Privacidade</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Política de Devolução</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Política de Entrega</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Termos de Serviço</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Rastrear Pedido</a>
+          </li>
+        </ul>
+
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Serviços</p>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Banho e Tosa</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Treinamento Positivo de Cães</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Serviços Veterinários</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Seguro para Pets</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Adoção de Pets</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Centro de Recursos</a>
+          </li>
+        </ul>
+
+
+        <div class="footer-bottom">
+          <div class="container">
+
+            <p class="copyright">
+              &copy; 2023 Feito por <a href="#" class="copyright-link">Fspaulohenrique</a>
+            </p>
+
+            <img src="./src/images/payment.png" width="397" height="32" loading="lazy" alt="payment method" class="img">
+
+          </div>
+        </div>
+
+  </footer>
+
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+  <!-- <script src="./src/js/script.js" defer></script> Em andamento--> 
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
